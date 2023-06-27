@@ -15,7 +15,7 @@ URI
 
 GET /v2/{project_id}/streams/{stream_name}/metrics
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +-----------------+-----------------+-----------------+---------------------+
    | Parameter       | Mandatory       | Type            | Description         |
@@ -27,32 +27,32 @@ GET /v2/{project_id}/streams/{stream_name}/metrics
    |                 |                 |                 | Maximum: **60**     |
    +-----------------+-----------------+-----------------+---------------------+
 
-.. table:: **Table 2** Query parameters
+.. table:: **Table 2** Query Parameters
 
    +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                    |
    +=================+=================+=================+================================================================================================================================================================================+
-   | label           | No              | String          | Stream monitoring metric. (Either label or label_list must be specified. If both label_list and label are specified, label_list prevails.)                                     |
+   | label           | No              | String          | Stream monitoring metric (Either **label** or **label_list** must be specified. If they are both specified, **label_list** prevails.)                                          |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_put_bytes_per_stream: total input traffic (byte)                                                                                                                      |
+   |                 |                 |                 | -  **total_put_bytes_per_stream**: total input traffic (byte)                                                                                                                  |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_get_bytes_per_stream: total output traffic (byte)                                                                                                                     |
+   |                 |                 |                 | -  **total_get_bytes_per_stream**: total output traffic (byte)                                                                                                                 |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_put_records_per_stream: total number of input records                                                                                                                 |
+   |                 |                 |                 | -  **total_put_records_per_stream**: total number of input records                                                                                                             |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_get_records_per_stream: total number of output records                                                                                                                |
+   |                 |                 |                 | -  **total_get_records_per_stream**: total number of output records                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_put_req_latency: average processing time of upload requests (millisecond)                                                                                             |
+   |                 |                 |                 | -  **total_put_req_latency**: average processing time of upload requests (millisecond)                                                                                         |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_get_req_latency: average processing time of download requests (millisecond)                                                                                           |
+   |                 |                 |                 | -  **total_get_req_latency**: average processing time of download requests (millisecond)                                                                                       |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_put_req_suc_per_stream: number of successful upload requests                                                                                                          |
+   |                 |                 |                 | -  **total_put_req_suc_per_stream**: number of successful upload requests                                                                                                      |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  total_get_req_suc_per_stream: number of successful download requests                                                                                                        |
+   |                 |                 |                 | -  **total_get_req_suc_per_stream**: number of successful download requests                                                                                                    |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  traffic_control_put: number of rejected upload requests due to flow control                                                                                                 |
+   |                 |                 |                 | -  **traffic_control_put**: number of rejected upload requests due to flow control                                                                                             |
    |                 |                 |                 |                                                                                                                                                                                |
-   |                 |                 |                 | -  traffic_control_get: number of rejected download requests due to flow control                                                                                               |
+   |                 |                 |                 | -  **traffic_control_get**: number of rejected download requests due to flow control                                                                                           |
    |                 |                 |                 |                                                                                                                                                                                |
    |                 |                 |                 | Enumeration values:                                                                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                |
@@ -88,13 +88,13 @@ Request Parameters
 
 .. table:: **Table 3** Request header parameters
 
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                         |
-   +=================+=================+=================+=====================================================================================================+
-   | X-Auth-Token    | Yes             | String          | User token.                                                                                         |
-   |                 |                 |                 |                                                                                                     |
-   |                 |                 |                 | The token can be obtained by calling the IAM API (value of X-Subject-Token in the response header). |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
+   +=================+=================+=================+==========================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                          |
+   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------

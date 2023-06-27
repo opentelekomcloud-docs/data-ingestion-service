@@ -15,7 +15,7 @@ URI
 
 GET /v2/{project_id}/checkpoints
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    ========== ========= ====== ===========
    Parameter  Mandatory Type   Description
@@ -23,26 +23,22 @@ GET /v2/{project_id}/checkpoints
    project_id Yes       String Project ID.
    ========== ========= ====== ===========
 
-.. table:: **Table 2** Query parameters
+.. table:: **Table 2** Query Parameters
 
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                |
    +=================+=================+=================+============================================================================================================================================================================+
    | stream_name     | Yes             | String          | Name of the stream to which the checkpoint belongs.                                                                                                                        |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | partition_id    | Yes             | String          | Identifier of the stream partition to which the checkpoint belongs. The value can be in either of the following formats:                                                   |
-   |                 |                 |                 |                                                                                                                                                                            |
-   |                 |                 |                 | -  shardId-0000000000                                                                                                                                                      |
-   |                 |                 |                 |                                                                                                                                                                            |
-   |                 |                 |                 | -  0                                                                                                                                                                       |
+   | partition_id    | Yes             | String          | Identifier of the stream partition to which the checkpoint belongs. The value can be in either of the following formats:- shardId-0000000000- 0                            |
    |                 |                 |                 |                                                                                                                                                                            |
    |                 |                 |                 | For example, if a stream has three partitions, the partition identifiers are 0, 1, and 2, or shardId-0000000000, shardId-0000000001, and shardId-0000000002, respectively. |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | app_name        | Yes             | String          | Name of the app associated with the checkpoint.                                                                                                                            |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | checkpoint_type | Yes             | String          | Type of the checkpoint.                                                                                                                                                    |
+   | checkpoint_type | Yes             | String          | Type of the checkpoint                                                                                                                                                     |
    |                 |                 |                 |                                                                                                                                                                            |
-   |                 |                 |                 | -  LAST_READ: Only sequence numbers are recorded in databases.                                                                                                             |
+   |                 |                 |                 | -  **LAST_READ**: Only sequence numbers are recorded in databases.                                                                                                         |
    |                 |                 |                 |                                                                                                                                                                            |
    |                 |                 |                 | Enumeration values:                                                                                                                                                        |
    |                 |                 |                 |                                                                                                                                                                            |
@@ -54,13 +50,13 @@ Request Parameters
 
 .. table:: **Table 3** Request header parameters
 
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                         |
-   +=================+=================+=================+=====================================================================================================+
-   | X-Auth-Token    | Yes             | String          | User token.                                                                                         |
-   |                 |                 |                 |                                                                                                     |
-   |                 |                 |                 | The token can be obtained by calling the IAM API (value of X-Subject-Token in the response header). |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
+   +=================+=================+=================+==========================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                          |
+   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------

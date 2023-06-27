@@ -48,10 +48,6 @@ Request Parameters
    | destination_type           | Yes             | String                                                                                               | Dump destination. Possible values:                                    |
    |                            |                 |                                                                                                      |                                                                       |
    |                            |                 |                                                                                                      | -  OBS: Data is dumped to OBS.                                        |
-   |                            |                 |                                                                                                      | -  MRS: Data is dumped to MRS.                                        |
-   |                            |                 |                                                                                                      | -  DLI: Data is dumped to DLI.                                        |
-   |                            |                 |                                                                                                      | -  CLOUDTABLE: Data is dumped to CloudTable.                          |
-   |                            |                 |                                                                                                      | -  DWS: Data is dumped to DWS.                                        |
    |                            |                 |                                                                                                      |                                                                       |
    |                            |                 |                                                                                                      | Default: **NOWHERE**                                                  |
    |                            |                 |                                                                                                      |                                                                       |
@@ -152,20 +148,12 @@ Request Parameters
    | destination_file_type | No              | String                                                                 | Dump file format. Possible values:                                                                                                                                                                                                  |
    |                       |                 |                                                                        |                                                                                                                                                                                                                                     |
    |                       |                 |                                                                        | -  Text (default)                                                                                                                                                                                                                   |
-   |                       |                 |                                                                        | -  Parquet                                                                                                                                                                                                                          |
-   |                       |                 |                                                                        | -  CarbonData                                                                                                                                                                                                                       |
-   |                       |                 |                                                                        |                                                                                                                                                                                                                                     |
-   |                       |                 |                                                                        | Note:                                                                                                                                                                                                                               |
-   |                       |                 |                                                                        |                                                                                                                                                                                                                                     |
-   |                       |                 |                                                                        | You can select Parquet or CarbonData only when Source Data Type is set to JSON and Dump Destination is set to OBS.                                                                                                                  |
    |                       |                 |                                                                        |                                                                                                                                                                                                                                     |
    |                       |                 |                                                                        | Default: **text**                                                                                                                                                                                                                   |
    |                       |                 |                                                                        |                                                                                                                                                                                                                                     |
    |                       |                 |                                                                        | Enumeration values:                                                                                                                                                                                                                 |
    |                       |                 |                                                                        |                                                                                                                                                                                                                                     |
    |                       |                 |                                                                        | -  **text**                                                                                                                                                                                                                         |
-   |                       |                 |                                                                        | -  **parquet**                                                                                                                                                                                                                      |
-   |                       |                 |                                                                        | -  **carbon**                                                                                                                                                                                                                       |
    +-----------------------+-----------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | processing_schema     | No              | :ref:`ProcessingSchema <dis_02_0410__request_processingschema>` object | Dump time directory generated based on the timestamp of the source data and the configured partition_format. Directory structure of the object file written into OBS. The directory structure is in the format of yyyy/MM/dd/HH/mm. |
    +-----------------------+-----------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -245,7 +233,7 @@ Example Requests
         }
       }
 
--  Adding OBS Dump Tasks (The dump file format is Parquet.)
+-  Adding OBS Dump Tasks (The dump file format is Text.)
 
    .. code-block:: text
 
@@ -257,7 +245,7 @@ Example Requests
           "task_name" : "newtask",
           "consumer_strategy" : "LATEST",
           "agency_name" : "dis_admin_agency",
-          "destination_file_type" : "parquet",
+          "destination_file_type" : "text",
           "obs_bucket_path" : "obsbucket",
           "file_prefix" : "",
           "partition_format" : "yyyy/MM/dd/HH/mm",

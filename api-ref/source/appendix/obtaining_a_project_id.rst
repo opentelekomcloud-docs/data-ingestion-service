@@ -8,9 +8,9 @@ Obtaining a Project ID
 Obtaining a Project ID by Calling an API
 ----------------------------------------
 
-You can obtain a project ID by calling the API for `Querying Project Information Based on the Specified Criteria <https://docs.otc.t-systems.com/api/iam/en-us_topic_0057845625.html>`__.
+You can obtain the project ID by calling the API `used to query project information <https://docs.otc.t-systems.com/api/iam/en-us_topic_0057845625.html>`__.
 
-The API for obtaining the project ID is **GET https://{Endpoint}/v3/projects/**, where *Endpoint* indicates the endpoint of IAM. You can obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__. For details about API authentication, see :ref:`Authentication <dis_02_0517>`.
+The API used to obtain a project ID is GET **https://{Endpoint}/v3/projects**. **{Endpoint}** is the IAM endpoint and can be obtained from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__. For details about API authentication, see :ref:`Authentication <dis_02_0517>`.
 
 The following is an example response. The value of **id** is the project ID. If multiple IDs are returned, obtain the desired project ID based on the actual region (name).
 
@@ -52,7 +52,7 @@ A project ID is required for some URLs when an API is called. To obtain a projec
    On the **My Credentials** page, view project IDs in the project list.
 
 
-.. figure:: /_static/images/en-us_image_0000001238312593.jpg
+.. figure:: /_static/images/en-us_image_0191919629.jpg
    :alt: **Figure 1** Viewing project IDs
 
    **Figure 1** Viewing project IDs

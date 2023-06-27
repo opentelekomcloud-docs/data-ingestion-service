@@ -10,9 +10,6 @@ Stream Management
 -  :ref:`Deleting Specified Streams <deletestream>`
 -  :ref:`Querying Stream Details <dis_02_0025>`
 -  :ref:`Changing Partition Quantity <updatepartitioncount>`
--  :ref:`Updating Stream Information <updatestream>`
--  :ref:`Adding Permission Policies <createpolicies>`
--  :ref:`Querying Permission Policies <listpolicies>`
 
 .. toctree::
    :maxdepth: 1
@@ -23,6 +20,3 @@ Stream Management
    deleting_specified_streams
    querying_stream_details
    changing_partition_quantity
-   updating_stream_information
-   adding_permission_policies
-   querying_permission_policies
