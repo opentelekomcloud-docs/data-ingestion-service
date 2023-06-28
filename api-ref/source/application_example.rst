@@ -10,7 +10,7 @@ Scenarios
 
 DIS provides efficient collection, transmission, and distribution capabilities for real-time data and provides a variety of APIs to help you quickly build real-time data applications.
 
-The following describes how to create a DIS stream by calling the :ref:`Before You Start <dis_02_0016_01>` API. For details, see :ref:`Calling APIs <dis_02_0516>`.
+The following describes how to create a DIS stream by calling the :ref:`Before You Start <dis_02_0511>` API. For details, see :ref:`Calling APIs <dis_02_0516>`.
 
 .. note::
 
@@ -29,7 +29,7 @@ Prerequisites
 
 You have planned the region where DIS is located and determined the endpoint for calling an API based on the region.
 
-An endpoint is the **request address** for calling an API. Endpoints vary depending on services and regions. You can obtain endpoints from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
+An endpoint is the **request address** for calling an API. Endpoints vary depending on services and regions. You can obtain endpoints of the service from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
 Creating a Stream
 -----------------
@@ -120,15 +120,8 @@ You can also configure a schema for the stream. When using DIS to dump data to o
       "auto_scale_enabled": true,
       "auto_scale_min_partition_count": 1,
       "auto_scale_max_partition_count": 10
-      "data_type": "JSON",
-      "data_schema":
-      "{\"type\":\"record\",\"name\":\"RecordName\",\"fields\":[{\"name\":\"key1\",\"type\":\"string\"},{\"name\":\"key2\",\"type\":\"string\"}]}"
+      "data_type": "BLOG",
       }
-
-   In this example, a stream whose source data type is JSON and that contains the key1 and key2 attributes is created.
-
-   -  **data_type** indicates the type of source data. The value **JSON** indicates that the data format in the partition is JSON.
-   -  **data_schema** indicates the source data schema, which describes the source data structures in JSON and CSV formats using the Avro Schema syntax.
 
    If the request is successful, 201 Created is returned.
 

@@ -2,8 +2,8 @@
 
 .. _ListTransferTasks:
 
-Querying Dump Tasks
-===================
+Querying Dump Task
+==================
 
 Function
 --------
@@ -69,54 +69,28 @@ Response Parameters
    | state                   | String                | Dump task status. Possible values:           |
    |                         |                       |                                              |
    |                         |                       | -  ERROR: An error occurs.                   |
-   |                         |                       |                                              |
    |                         |                       | -  STARTING: The dump task is being started. |
-   |                         |                       |                                              |
    |                         |                       | -  PAUSED: The dump task has been stopped.   |
-   |                         |                       |                                              |
    |                         |                       | -  RUNNING: The dump task is running.        |
-   |                         |                       |                                              |
    |                         |                       | -  DELETE: The dump task has been deleted.   |
-   |                         |                       |                                              |
    |                         |                       | -  ABNORMAL: The dump task is abnormal.      |
    |                         |                       |                                              |
    |                         |                       | Enumeration values:                          |
    |                         |                       |                                              |
    |                         |                       | -  **ERROR**                                 |
-   |                         |                       |                                              |
    |                         |                       | -  **STARTING**                              |
-   |                         |                       |                                              |
    |                         |                       | -  **PAUSED**                                |
-   |                         |                       |                                              |
    |                         |                       | -  **RUNNING**                               |
-   |                         |                       |                                              |
    |                         |                       | -  **DELETE**                                |
-   |                         |                       |                                              |
    |                         |                       | -  **ABNORMAL**                              |
    +-------------------------+-----------------------+----------------------------------------------+
    | destination_type        | String                | Dump destination. Possible values:           |
    |                         |                       |                                              |
    |                         |                       | -  OBS: Data is dumped to OBS.               |
    |                         |                       |                                              |
-   |                         |                       | -  MRS: Data is dumped to MRS.               |
-   |                         |                       |                                              |
-   |                         |                       | -  DLI: Data is dumped to DLI.               |
-   |                         |                       |                                              |
-   |                         |                       | -  CLOUDTABLE: Data is dumped to CloudTable. |
-   |                         |                       |                                              |
-   |                         |                       | -  DWS: Data is dumped to DWS.               |
-   |                         |                       |                                              |
    |                         |                       | Enumeration values:                          |
    |                         |                       |                                              |
    |                         |                       | -  **OBS**                                   |
-   |                         |                       |                                              |
-   |                         |                       | -  **MRS**                                   |
-   |                         |                       |                                              |
-   |                         |                       | -  **DLI**                                   |
-   |                         |                       |                                              |
-   |                         |                       | -  **CLOUDTABLE**                            |
-   |                         |                       |                                              |
-   |                         |                       | -  **DWS**                                   |
    +-------------------------+-----------------------+----------------------------------------------+
    | create_time             | Long                  | Time when the dump task is created.          |
    +-------------------------+-----------------------+----------------------------------------------+
