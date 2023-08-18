@@ -13,15 +13,15 @@ You can view stream monitoring information on the console and monitor the data c
 
 #. In the navigation tree on the left, choose **Stream Management**.
 
-#. In the stream list, click the name of the DIS stream whose monitoring metrics will be viewed. The monitoring page is displayed.
+#. In the stream list, click the name of the DIS stream whose monitoring metrics you want to view.
 
 
-   .. figure:: /_static/images/en-us_image_0000001266897429.jpg
+   .. figure:: /_static/images/en-us_image_0000001453327325.gif
       :alt: **Figure 1** Monitoring page
 
       **Figure 1** Monitoring page
 
-#. On the **Monitoring** page, click the **Streams** or **Partitions** tab to view stream or partition monitoring metrics. :ref:`Table 1 <dis_01_0012__table2942144318834>` describes the monitoring parameters. For details about basic stream information, see :ref:`3 <dis_01_0601__li23032735111458>`.
+#. On the **Monitoring** page, click the **Streams** or **Partitions** tab to view stream or partition monitoring metrics. :ref:`Table 1 <dis_01_0012__table2942144318834>` describes the monitoring parameters. For details about basic stream information, see :ref:`Table 1 <dis_01_0601__table1518745742610>`.
 
    .. _dis_01_0012__table2942144318834:
 
@@ -35,8 +35,8 @@ You can view stream monitoring information on the console and monitor the data c
       |                                      |    Values:                                                                                                                |
       |                                      |                                                                                                                           |
       |                                      |    -  1h                                                                                                                  |
-      |                                      |    -  2h                                                                                                                  |
       |                                      |    -  3h                                                                                                                  |
+      |                                      |    -  12h                                                                                                                 |
       +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
       | **Partitions**                       |                                                                                                                           |
       +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
@@ -59,4 +59,4 @@ You can view stream monitoring information on the console and monitor the data c
       | Average Request Processing Time (ms) | The average amount of time spent in processing a PutRecords or GetRecords request.                                        |
       +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
-.. |image1| image:: /_static/images/en-us_image_0000001266777397.png
+.. |image1| image:: /_static/images/en-us_image_0120206196.png

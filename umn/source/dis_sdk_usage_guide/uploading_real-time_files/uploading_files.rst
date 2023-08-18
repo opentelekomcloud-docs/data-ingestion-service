@@ -8,7 +8,7 @@ Uploading Files
 Configuring a Stream for Uploading Real-Time Files
 --------------------------------------------------
 
-You must use the stream enabled to transmit real-time files. Here, **fileUploadStream** is used as an example.
+You must use the enabled stream to transmit real-time files. Here, **fileUploadStream** is used as an example.
 
 The value of **streamName** must be the same as that of **Stream Name** configured in :ref:`Step 1: Creating a DIS Stream <dis_01_0601>`.
 

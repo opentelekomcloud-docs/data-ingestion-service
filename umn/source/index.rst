@@ -10,8 +10,6 @@ Data Ingestion Service - User Guide
    managing_dis_streams/index
    managing_a_dump_task/index
    monitoring/index
-   cdr_specification/index
    dis_sdk_usage_guide/index
-   faqs/index
+   faqs
    change_history
-   glossary

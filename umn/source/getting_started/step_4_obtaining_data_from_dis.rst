@@ -13,7 +13,7 @@ You can retrieve data from DIS when needed.
 Sample Code
 -----------
 
-The example code file is the **ConsumerDemo.java** file in the **\\dis-sdk-demo\\src\\main\\java\\com\\bigdata\\dis\\sdk\\demo** directory decompressed from the **dis-sdk-XXX.zip** package. The compression package is downloaded in :ref:`Step 2: Preparing a DIS Application Development Environment <dis_01_0602>`.
+The example code file is the **ConsumerDemo.java** file in the **\\dis-sdk-demo\\src\\main\\java\\com\\bigdata\\dis\\sdk\\demo** directory decompressed from the **dis-sdk-XXX.zip** package. The compression package is downloaded from the `DIS SDK <https://dis-publish.obs-website.cn-north-1.myhuaweicloud.com/>`__.
 
 Running the Consumer Application
 --------------------------------
