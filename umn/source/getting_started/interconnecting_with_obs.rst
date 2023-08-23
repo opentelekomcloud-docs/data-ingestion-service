@@ -18,4 +18,4 @@ An IAM agency has been created by following the procedure in :ref:`Creating an I
 Data Dumping
 ------------
 
-In section :ref:`Creating a Dump Task <dis_01_0047>`, you can select a location to which data from DIS streams will be dumped. If Dump Destination is set to **OBS**, DIS periodically imports data from DIS streams to OBS.
+You can set **Dump Bucket** when :ref:`Creating a Dump Task <dis_01_0047>`. If Dump Destination is set to **OBS**, DIS periodically imports data from DIS streams to OBS.

@@ -41,5 +41,5 @@ Key Capabilities
 -  Scalable: A DIS stream can seamlessly scale its data throughput from megabytes to terabytes per hour, and from thousands to millions of PUT records per second.
 -  Easy to use: You can create a DIS stream within seconds. It is easy to put data into a stream, and build a data processing application.
 -  Low cost: DIS has no upfront cost and you only pay for the resources you use.
--  Parallel processing: DIS allows you to have multiple DIS applications processing the same stream concurrently. For example, you can have one application running real-time analytics and another sending data to OBS from the same stream.
+-  Parallel processing: DIS allows you to have multiple DIS applications processing the same stream concurrently.
 -  Secure and reliable: DIS can retain data for 24 to 72 hours to prevent data loss in case of application faults, individual machine faults, or facility faults.

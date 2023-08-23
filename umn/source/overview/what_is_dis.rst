@@ -13,7 +13,7 @@ Data Flows
 If you set the dump destination to Object Storage Service (OBS), the streaming data will be dumped to OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000001222097314.png
+.. figure:: /_static/images/en-us_image_0164044795.png
    :alt: **Figure 1** Data flow-1
 
    **Figure 1** Data flow-1
@@ -33,10 +33,10 @@ Basic Concepts
 
 -  DIS application: DIS applications write, read, and process data in DIS streams. You can develop DIS applications using the client library software development kit (SDK).
 
--  SDK: SDK is a Java-based client library. With SDK, you can build DIS applications easily to write, read, and process data in DIS streams.
+-  SDK: The SDK is a Java-based client library. With the SDK, you can build DIS applications easily to write, read, and process data in DIS streams.
 
 -  Project: Projects are used to group and isolate OpenStack resources (computing resources, storage resources, and network resources). A project can be a department or a project team. Multiple projects can be created for one tenant account. A region has multiple projects, but one project is related to one region. DIS streams in different projects cannot communicate with each other.
 
--  Checkpoint: When an application consumes data, the latest serial number of the consumed data is recorded as a checkpoint. When the data is reconsumed, the consumption can be continued based on this checkpoint.
+-  Checkpoint: When an application consumes data, the latest serial number of the consumed data is recorded as a checkpoint. When the data is re-consumed, the consumption can be continued based on this checkpoint.
 
 -  Application: When multiple applications consume data in the same stream, an APP is used as an identifier to distinguish consumption checkpoints of different applications.

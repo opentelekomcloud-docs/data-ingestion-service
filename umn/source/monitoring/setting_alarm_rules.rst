@@ -16,10 +16,10 @@ Procedure
 ---------
 
 #. Log in to the management console.
-#. Choose **All Services** > **Management & Deployment** > **Cloud Eye**.
-#. In the left navigation pane, choose **Alarm Management** > **Alarm Rules** > **Create Alarm Rule**.
+#. Choose **Service List** > **Management & Governance** > **Cloud Eye**.
+#. In the left navigation pane, choose **Alarm Management** > **Alarm Rules**. In the right pane, click **Create Alarm Rule**.
 #. Set alarm rules for the DIS stream as prompted. Currently, only custom alarm rules are supported.
-#. After the setting is complete, click **Create**. When an alarm that meets the rule is generated, the system automatically sends a notification.
+#. After configuring the required parameters, click **Create**. When an alarm that meets the rule is generated, the system automatically sends a notification.
 
    .. note::
 

@@ -19,7 +19,7 @@ Local data is continuously uploaded to DIS.
 Sample Code
 -----------
 
-The example code file is the **ProducerDemo.java** file in the **\\dis-sdk-demo\\src\\main\\java\\com\\bigdata\\dis\\sdk\\demo** directory decompressed from the **dis-sdk-1.2.3.zip** package. The compression package is downloaded in :ref:`Step 2: Preparing a DIS Application Development Environment <dis_01_0602>`.
+The example code file is the **ProducerDemo.java** file in the **\\dis-sdk-demo\\src\\main\\java\\com\\bigdata\\dis\\sdk\\demo** directory decompressed from the **dis-sdk-1.2.3.zip** package. The compression package is downloaded from the `DIS SDK <https://dis-publish.obs-website.cn-north-1.myhuaweicloud.com/>`__.
 
 Running the Producer Program
 ----------------------------
@@ -27,7 +27,7 @@ Running the Producer Program
 Right-click the producer application and choose **Run As** > **1 Java Application** from the shortcut menu.
 
 
-.. figure:: /_static/images/en-us_image_0000001266977421.png
+.. figure:: /_static/images/en-us_image_0068150349.png
    :alt: **Figure 1** Running a producer application
 
    **Figure 1** Running a producer application

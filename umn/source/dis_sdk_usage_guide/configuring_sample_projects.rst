@@ -5,7 +5,7 @@
 Configuring Sample Projects
 ===========================
 
-The **dis-sdk-**\ *1.2.3*\ **.zip** package of the latest version in :ref:`Downloading SDKs <dis_06_0005>` provides a sample project. You can use a development tool (such as Eclipse) on the local server to compile and run the sample project. You can also develop your applications based on the sample project. The sample project code is available in the **\\dis-sdk-demo\\src\\com\\bigdata\\dis\\sdk\\demo** directory.
+Download the **dis-sdk-**\ *1.2.3*\ **.zip** package from the URL noted in section :ref:`Downloading SDKs <dis_06_0005>`. The package provides a sample project. You can use a development tool (such as Eclipse) on the local server to compile and run the sample project. You can also develop your applications based on the sample project. The sample project code is available in the **\\dis-sdk-demo\\src\\com\\bigdata\\dis\\sdk\\demo** directory.
 
 ================= ====================
 Sample Code       Description
@@ -28,7 +28,7 @@ Procedure
 
       .. _dis_06_0013__f23cd224614d04888bfa7c759107662f3:
 
-      .. figure:: /_static/images/en-us_image_0000001222097302.png
+      .. figure:: /_static/images/en-us_image_0124306701.png
          :alt: **Figure 1** Import Projects
 
          **Figure 1** Import Projects
@@ -45,7 +45,7 @@ Procedure
       #. Click **Apply and Close**.
 
 
-      .. figure:: /_static/images/en-us_image_0000001222417262.png
+      .. figure:: /_static/images/en-us_image_0000001499513972.png
          :alt: **Figure 2** Resource
 
          **Figure 2** Resource
@@ -59,7 +59,7 @@ Procedure
       #. On the **Properties for dis-sdk-demo** page, click **Apply and Close** to import all the **.jar** files in the current path and the **third_lib** folder to the project.
 
 
-      .. figure:: /_static/images/en-us_image_0000001266977433.png
+      .. figure:: /_static/images/en-us_image_0124306705.png
          :alt: **Figure 3** Java Build Path
 
          **Figure 3** Java Build Path

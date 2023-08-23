@@ -39,14 +39,14 @@ Procedure
 #. On the DIS monitoring page, you can view the graphs of all monitoring metrics.
 
 
-   .. figure:: /_static/images/en-us_image_0000001222417338.png
+   .. figure:: /_static/images/en-us_image_0000001098956296.png
       :alt: **Figure 1** Viewing DIS monitoring metrics
 
       **Figure 1** Viewing DIS monitoring metrics
 
 #. Click |image2| in the upper right corner of the graphs to zoom out the graphs.
 
-   You can view the raw monitoring data curves of different metrics in the last 1 hour, 3 hours, and 12 hours. You can determine whether to enable **Auto Refresh**. Cloud Eye provides an automatic refresh interval of 60 seconds.
+   You can view the raw monitoring data curves of different metrics over different periods, such as the last 1 hour, 3 hours, and 12 hours. You can determine whether to enable **Auto Refresh**. Cloud Eye provides an automatic refresh interval of 60 seconds.
 
-.. |image1| image:: /_static/images/en-us_image_0000001222577290.png
-.. |image2| image:: /_static/images/en-us_image_0000001222097374.png
+.. |image1| image:: /_static/images/en-us_image_0238223179.png
+.. |image2| image:: /_static/images/en-us_image_0216208311.png

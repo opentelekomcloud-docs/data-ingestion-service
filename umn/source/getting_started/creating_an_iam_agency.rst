@@ -21,7 +21,7 @@ Creating an IAM Agency
 #. Select **Agencies** in the navigation tree pane, and click **Create Agency**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001266897473.jpg
+   .. figure:: /_static/images/en-us_image_0124319023.jpg
       :alt: **Figure 1** Creating an IAM agency
 
       **Figure 1** Creating an IAM agency
@@ -29,7 +29,7 @@ Creating an IAM Agency
 #. Configure agency parameters and click **OK**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001266777501.jpg
+   .. figure:: /_static/images/en-us_image_0124319248.jpg
       :alt: **Figure 2** Configuring agency parameters
 
       **Figure 2** Configuring agency parameters

@@ -13,16 +13,16 @@ Procedure
 #. Use the account to log in to the DIS console.
 
 
-   .. figure:: /_static/images/en-us_image_0000001266897449.jpg
+   .. figure:: /_static/images/en-us_image_0000001403080926.gif
       :alt: **Figure 1** DIS management console
 
       **Figure 1** DIS management console
 
 #. Click |image1| in the upper left corner of the page and select a region and project.
 
-#. .. _dis_01_0601__li23032735111458:
+#. Click Create Stream and set related parameters.
 
-   Click Create Stream and set related parameters.
+   .. _dis_01_0601__table1518745742610:
 
    .. table:: **Table 1** Stream parameters
 
@@ -42,6 +42,7 @@ Procedure
       |                        |                                                                                                                                                                                                                                                                                                   |                       |
       |                        | -  For a common DIS stream, the value of **Partitions** is an integer from 1 to 50. A tenant can create a maximum of 50 partitions.                                                                                                                                                               |                       |
       |                        | -  For an advanced DIS stream, the value of **Partitions** is an integer from 1 to 10. A tenant can create a maximum of 10 partitions.                                                                                                                                                            |                       |
+      |                        | -  Both common DIS streams and advanced DIS streams can automatically scale up. You can also scale them up manually. **Significantly**, a maximum of 10 automatic scale-up, 10 manual scale-up, and 1 scale-down operations can be performed for each stream **within one hour.**                 |                       |
       +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
       | Partition Calculator   | Calculator used to calculate the estimated number of partitions based on the information you entered.                                                                                                                                                                                             | ``-``                 |
       |                        |                                                                                                                                                                                                                                                                                                   |                       |
@@ -79,8 +80,8 @@ Procedure
       | Tag                    | Identifier of the stream. Adding tags to streams can help you identify and manage your stream resources.                                                                                                                                                                                          | ``-``                 |
       +------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. Click . The **Details** page is displayed.
+#. Click **Next**. The **Details** page is displayed.
 
 #. Click **Submit**.
 
-.. |image1| image:: /_static/images/en-us_image_0000001222257350.png
+.. |image1| image:: /_static/images/en-us_image_0120206164.png

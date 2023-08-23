@@ -5,7 +5,7 @@
 Permissions
 ===========
 
-You need an account on the management console to create, query, and delete DIS streams, and need an Access Key ID/Secret Access Key (AK/SK) file to push, pull, and dump data.
+You need an account on the management console to create, query, and delete DIS streams, and you need an Access Key ID/Secret Access Key (AK/SK) file to push, pull, and dump data.
 
 For details about how to perform operations on IAM, see *IAM User Guide*.
 

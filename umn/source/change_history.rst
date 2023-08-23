@@ -8,17 +8,16 @@ Change History
 +-----------------------------------+----------------------------------------------------------------------------------+
 | Release Date                      | What's New                                                                       |
 +===================================+==================================================================================+
-| 2022-06-15                        | Modified the following section:                                                  |
+| 2023-03-30                        | Modified the following sections:                                                 |
 |                                   |                                                                                  |
-|                                   | :ref:`What Is DIS? <dis_01_0001>`                                                |
-|                                   |                                                                                  |
-|                                   | Added the following sections:                                                    |
-|                                   |                                                                                  |
-|                                   | :ref:`CDR Specification <dis_01_0222>`                                           |
+|                                   | -  :ref:`General Procedure <dis_01_0009>`                                        |
+|                                   | -  :ref:`Step 1: Creating a DIS Stream <dis_01_0601>`                            |
+|                                   | -  :ref:`Viewing Stream Monitoring Metrics <dis_01_0012>`                        |
+|                                   | -  :ref:`Configuring Sample Projects <dis_06_0013>`                              |
 +-----------------------------------+----------------------------------------------------------------------------------+
-| 2020-01-03                        | Modified the following section:                                                  |
+| 2022-09-30                        | Removed the following section:                                                   |
 |                                   |                                                                                  |
-|                                   | :ref:`Viewing Stream Monitoring Metrics <dis_01_0012>`                           |
+|                                   | CDR Specification                                                                |
 +-----------------------------------+----------------------------------------------------------------------------------+
 | 2019-06-12                        | Modified the following section:                                                  |
 |                                   |                                                                                  |

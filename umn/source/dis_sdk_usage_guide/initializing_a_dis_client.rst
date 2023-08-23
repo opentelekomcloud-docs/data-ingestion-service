@@ -5,7 +5,7 @@
 Initializing a DIS Client
 =========================
 
-You can use either of the following methods to initialize a DIS SDK client instance: For details about **endpoint**, **ak**, **sk**, **region**, and **projectId**, see :ref:`Obtaining Authentication Information <dis_01_0043>`.
+You can use one of the following methods to initialize a DIS SDK client instance: For details about **endpoint**, **ak**, **sk**, **region**, and **projectId**, see :ref:`Obtaining Authentication Information <dis_01_0043>`.
 
 -  Use the code to initialize the DIS SDK client instance. For details about the code example, see the **ProducerDemo.java** file.
 
