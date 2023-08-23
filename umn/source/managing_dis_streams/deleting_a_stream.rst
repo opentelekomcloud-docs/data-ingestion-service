@@ -16,7 +16,7 @@ Deleting a Stream
 #. In the navigation tree on the left, choose **Stream Management**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001222417238.jpg
+   .. figure:: /_static/images/en-us_image_0000001402769822.gif
       :alt: **Figure 1** Managing DIS streams
 
       **Figure 1** Managing DIS streams
@@ -24,11 +24,11 @@ Deleting a Stream
 #. Click **Delete** in the **Operation** column of the stream that you want to delete. The **Delete Stream** dialog box is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001222257278.jpg
+   .. figure:: /_static/images/en-us_image_0000001453010069.gif
       :alt: **Figure 2** Deleting a stream
 
       **Figure 2** Deleting a stream
 
 #. Click **OK** to delete the selected stream.
 
-.. |image1| image:: /_static/images/en-us_image_0000001266777397.png
+.. |image1| image:: /_static/images/en-us_image_0120206196.png

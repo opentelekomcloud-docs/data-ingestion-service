@@ -8,7 +8,7 @@ Listing DIS Streams
 The **Stream Management** page displays all DIS streams created. After clicking a stream, you can view the following information about this stream:
 
 
-.. figure:: /_static/images/en-us_image_0000001222097286.jpg
+.. figure:: /_static/images/en-us_image_0000001403086902.gif
    :alt: **Figure 1** Stream Management
 
    **Figure 1** Stream Management

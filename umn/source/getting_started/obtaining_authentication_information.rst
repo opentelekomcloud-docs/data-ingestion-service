@@ -8,12 +8,12 @@ Obtaining Authentication Information
 Obtaining AK/SK
 ---------------
 
-Access Key ID/Secret Access Key (AK/SK) is created on Identity and Access Management (IAM) to authenticate calls to application programming interfaces (APIs) on the public cloud. To obtain AK/SK, choose **My Credential** > **Access Keys**.
+Access Key ID/Secret Access Key (AK/SK) is created on Identity and Access Management (IAM) to authenticate calls to application programming interfaces (APIs) on the public cloud. To obtain an AK/SK pair, choose **My Credentials** > **Access Keys**.
 
 Obtaining Project ID
 --------------------
 
-A project is a group of tenant resources. To view the project IDs of different regions, choose **My Credential** > **Projects**.
+A project is a group of tenant resources. To view the project IDs of different regions, choose **My Credentials** > **API Credentials**.
 
 Obtaining Region Information and Endpoint Information
 -----------------------------------------------------

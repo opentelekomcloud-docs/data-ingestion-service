@@ -15,21 +15,19 @@ A tag consists of a tag key and a tag value. :ref:`Table 1 <dis_01_0050__en-us_t
 
 .. table:: **Table 1** Naming rules for a tag key and value
 
-   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Parameter             | Rule                                                                                                                       | Example               |
-   +=======================+============================================================================================================================+=======================+
-   | Key                   | A tag key cannot be left blank.                                                                                            | Organization          |
-   |                       |                                                                                                                            |                       |
-   |                       | A tag key must be unique for a stream.                                                                                     |                       |
-   |                       |                                                                                                                            |                       |
-   |                       | A tag key contains a maximum of 36 characters.                                                                             |                       |
-   |                       |                                                                                                                            |                       |
-   |                       | A tag value cannot contain special characters ``=*<>\,|/`` or start or end with a space.                                   |                       |
-   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Tag value             | A tag value contains a maximum of 43 characters.                                                                           | Apache                |
-   |                       |                                                                                                                            |                       |
-   |                       | A tag value cannot contain special characters ``=*<>\,|/`` or start or end with a space. This parameter can be left blank. |                       |
-   +-----------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Parameter             | Rule                                                                                                                                                                                                                                                                                               | Example               |
+   +=======================+====================================================================================================================================================================================================================================================================================================+=======================+
+   | Key                   | A tag key cannot be left blank.                                                                                                                                                                                                                                                                    | Organization          |
+   |                       |                                                                                                                                                                                                                                                                                                    |                       |
+   |                       | A stream can have only one tag key.                                                                                                                                                                                                                                                                |                       |
+   |                       |                                                                                                                                                                                                                                                                                                    |                       |
+   |                       | You can enter a maximum of 36 characters for **Key**. The value of **Key** cannot start or end with a space and cannot contain any of the following characters: is equal to (=), asterisk (``*``), is less than (<), is greater than (>), backslash (\\), comma (,), delimiter (|), and slash (/). |                       |
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Tag value             | The value can be null.                                                                                                                                                                                                                                                                             | Apache                |
+   |                       |                                                                                                                                                                                                                                                                                                    |                       |
+   |                       | You can enter a maximum of 43 characters for **Key**. The value of **Key** cannot start or end with a space and cannot contain any of the following characters: is equal to (=), asterisk (``*``), is less than (<), is greater than (>), backslash (\\), comma (,), delimiter (|), and slash (/). |                       |
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 Adding a Tag to a Stream
 ------------------------
@@ -38,7 +36,7 @@ You can add a tag to a stream on the **Buy Stream** page.
 
 #. Log in to the management console.
 
-#. Choose **Enterprise Intelligence** > **Data Ingestion Service**.
+#. On the management console, choose **Service List** > **Analytics** > **Data Ingestion Service**.
 
 #. On the DIS management console, click **Buy Stream**.
 
@@ -98,8 +96,8 @@ You can add, delete, modify, and view tags on the **Tags** tab page of a stream.
 
    -  Modify
 
-      In the **Operation** column of a tag, click **Edit**. In the displayed **Edit Tag** page, enter a new tag key and value and click **OK**.
+      In the **Operation** column of the tag, click **Edit**. In the displayed **Edit Tag** page, enter new tag key and value and click **OK**.
 
    -  Delete
 
-      In the **Operation** column of the tag, click **Delete**. After confirmation, click **OK** on the displayed **Delete Tag** page.
+      In the **Operation** column of the tag, click **Delete**. After confirmation, click **OK** in the displayed page for deleting a tag.

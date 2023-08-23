@@ -23,7 +23,7 @@ Procedure
    b. In the navigation tree, choose **Java**. On the **Java** page, configure general settings for Java development and then click **OK**.
 
 
-      .. figure:: /_static/images/en-us_image_0000001266697405.png
+      .. figure:: /_static/images/en-us_image_0120206057.png
          :alt: **Figure 1** Preferences
 
          **Figure 1** Preferences
@@ -34,7 +34,7 @@ Procedure
       -  To configure different variables for different versions of JDK, perform :ref:`1.c.ii <dis_01_0602__li40268681153416>` to :ref:`1.c.iv <dis_01_0602__li6851708153416>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001266777405.png
+      .. figure:: /_static/images/en-us_image_0120206033.png
          :alt: **Figure 2** Installed JREs
 
          **Figure 2** Installed JREs
@@ -48,7 +48,7 @@ Procedure
          Click **Add**. The **Add JRE** dialog box is displayed.
 
 
-         .. figure:: /_static/images/en-us_image_0000001222257286.png
+         .. figure:: /_static/images/en-us_image_0120206155.png
             :alt: **Figure 3** JRE Type
 
             **Figure 3** JRE Type
@@ -56,7 +56,7 @@ Procedure
       #. Select a JRE type and click **Next**.
 
 
-         .. figure:: /_static/images/en-us_image_0000001266897385.png
+         .. figure:: /_static/images/en-us_image_0120206008.png
             :alt: **Figure 4** JRE Definition
 
             **Figure 4** JRE Definition
@@ -81,7 +81,7 @@ Procedure
    c. Click **Browse** and select a save location for the **dis-sdk-demo** sample project. In the **Projects** area, select a sample project.
 
 
-      .. figure:: /_static/images/en-us_image_0000001222417242.png
+      .. figure:: /_static/images/en-us_image_0151034370.png
          :alt: **Figure 5** Importing a project
 
          **Figure 5** Importing a project
@@ -106,7 +106,7 @@ Procedure
       #. On the **Properties for dis-sdk-demo** page, click **Apply and Close** to import all the **.jar** files in the current path and the **third_lib** folder to the project.
 
 
-      .. figure:: /_static/images/en-us_image_0000001222097282.png
+      .. figure:: /_static/images/en-us_image_0086571410.png
          :alt: **Figure 6** Java Build Path
 
          **Figure 6** Java Build Path
