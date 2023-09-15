@@ -12,7 +12,7 @@ Local data is continuously uploaded to DIS.
 
 .. note::
 
-   Data can be stored in DIS, OBS, and DLI. For details about how to configure a storage location, see :ref:`Creating a Dump Task <dis_01_0047>`.
+   Data can be stored in DIS, OBS, and DLI. For how to configure a storage location, see :ref:`Creating a Dump Task <dis_01_0047>`.
 
    The maximum number of days for DIS to preserve data cannot exceed **Data Retention (days)**.
 
