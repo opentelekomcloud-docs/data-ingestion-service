@@ -70,7 +70,7 @@ Procedure
 
 #. Download resource packages.
 
-   Download the DIS SDK from https://dis.obs.eu-de.otc.t-systems.com/dis/download/dis-sdk-1.2.3.zip and its integrity check file from https://dis.obs.eu-de.otctest.t-systems.com/dis/download/dis-sdk-1.2.3.zip.sha256sum.
+   Download the DIS SDK from https://dis.obs.eu-de.otc.t-systems.com/dis/download/dis-sdk-1.2.3.zip and its integrity check file from https://dis.obs.eu-de.otc.t-systems.com/dis/download/dis-sdk-1.2.3.zip.sha256sum.
 
 #. Import the Eclipse project.
 
