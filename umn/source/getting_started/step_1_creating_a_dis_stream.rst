@@ -13,7 +13,7 @@ Procedure
 #. Use the account to log in to the DIS console.
 
 
-   .. figure:: /_static/images/en-us_image_0000001403080926.gif
+   .. figure:: /_static/images/en-us_image_0000001788900822.png
       :alt: **Figure 1** DIS management console
 
       **Figure 1** DIS management console

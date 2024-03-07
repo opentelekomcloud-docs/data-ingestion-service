@@ -16,7 +16,7 @@ You can view stream monitoring information on the console and monitor the data c
 #. In the stream list, click the name of the DIS stream whose monitoring metrics you want to view.
 
 
-   .. figure:: /_static/images/en-us_image_0000001453327325.gif
+   .. figure:: /_static/images/en-us_image_0000001788903274.png
       :alt: **Figure 1** Monitoring page
 
       **Figure 1** Monitoring page
@@ -37,6 +37,12 @@ You can view stream monitoring information on the console and monitor the data c
       |                                      |    -  1h                                                                                                                  |
       |                                      |    -  3h                                                                                                                  |
       |                                      |    -  12h                                                                                                                 |
+      |                                      |                                                                                                                           |
+      |                                      | -  You can customize the time range for viewing monitoring information.                                                   |
+      |                                      |                                                                                                                           |
+      |                                      |    -  Click |image2| next to **Custom**, and then set the start time and end time.                                        |
+      |                                      |    -  The end time cannot be later than the current system time.                                                          |
+      |                                      |    -  The difference between the start time and end time cannot exceed 72 hours.                                          |
       +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
       | **Partitions**                       |                                                                                                                           |
       +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
@@ -60,3 +66,4 @@ You can view stream monitoring information on the console and monitor the data c
       +--------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0120206196.png
+.. |image2| image:: /_static/images/en-us_image_0127307205.jpg
