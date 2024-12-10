@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'dis-umn.tex',
-     u'Data Ingestion Service - User Guide',
+    u'Data Ingestion Service - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
