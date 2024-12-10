@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'dis-api-ref.tex',
-     u'Data Ingestion Service - API Reference',
+    u'Data Ingestion Service - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
