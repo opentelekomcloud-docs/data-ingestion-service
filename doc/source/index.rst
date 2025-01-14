@@ -7,6 +7,7 @@ Data Ingestion Service (DIS) addresses the challenge of transmitting data from o
    :class: container-sbv
 
    .. service_card::
+      :environment: internal
       :service_type: dis
       :umn: This document provides detailed operation guidance of DIS to help you learn and use DIS.
       :api-ref: This document introduces API reference provided by DIS and describes functions and parameters of each API.
