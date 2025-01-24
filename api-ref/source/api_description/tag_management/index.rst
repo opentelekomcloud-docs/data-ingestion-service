@@ -5,22 +5,22 @@
 Tag Management
 ==============
 
--  :ref:`Adding Tags for Specified Streams <createtag>`
--  :ref:`Querying Tags of Specified Streams <showstreamtags>`
--  :ref:`Deleting Tags of Specified Streams <deletetag>`
--  :ref:`Adding Resource Tags in Batches <batchcreatetags>`
--  :ref:`Querying Tags of Specified Regions <listtags>`
+-  :ref:`Adding Tags to a Specified Stream <createtag>`
+-  :ref:`Querying Tags of a Specified Stream <showstreamtags>`
+-  :ref:`Deleting Tags of a Specified Stream <deletetag>`
+-  :ref:`Adding Resource Tags <batchcreatetags>`
+-  :ref:`Querying All Tags of a Specified Region <listtags>`
 -  :ref:`Using Tags to Filter Resources (Streams) <listresourcesbytags>`
--  :ref:`Deleting Resource Tags in Batches <batchdeletetags>`
+-  :ref:`Deleting Resource Tags <batchdeletetags>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   adding_tags_for_specified_streams
-   querying_tags_of_specified_streams
-   deleting_tags_of_specified_streams
-   adding_resource_tags_in_batches
-   querying_tags_of_specified_regions
+   adding_tags_to_a_specified_stream
+   querying_tags_of_a_specified_stream
+   deleting_tags_of_a_specified_stream
+   adding_resource_tags
+   querying_all_tags_of_a_specified_region
    using_tags_to_filter_resources_streams
-   deleting_resource_tags_in_batches
+   deleting_resource_tags

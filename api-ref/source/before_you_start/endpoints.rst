@@ -5,4 +5,4 @@
 Endpoints
 =========
 
-An endpoint is the **request address** for calling an API. Endpoints vary depending on services and regions. For the endpoints of all services, see `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
+An endpoint is the request address for calling an API. Endpoints vary depending on services and regions. The DIS endpoint is in the format of dis.{region_id}.{Domain name}. You can obtain the region and endpoint information from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.

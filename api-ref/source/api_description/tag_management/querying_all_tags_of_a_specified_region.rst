@@ -2,13 +2,18 @@
 
 .. _ListTags:
 
-Querying Tags of Specified Regions
-==================================
+Querying All Tags of a Specified Region
+=======================================
 
 Function
 --------
 
-This API is used to query all tags of specified regions.
+This API is used to query all tags of a specified region.
+
+Calling Method
+--------------
+
+For details, see :ref:`Calling APIs <dis_02_0400>`.
 
 URI
 ---
@@ -20,7 +25,7 @@ GET /v2/{project_id}/stream/tags
    ========== ========= ====== ===========
    Parameter  Mandatory Type   Description
    ========== ========= ====== ===========
-   project_id Yes       String Project ID.
+   project_id Yes       String Project ID
    ========== ========= ====== ===========
 
 Request Parameters
@@ -28,13 +33,13 @@ Request Parameters
 
 .. table:: **Table 2** Request header parameters
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
-   +=================+=================+=================+==========================================================================================================================================================+
-   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
-   |                 |                 |                 |                                                                                                                                                          |
-   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                       |
+   +=================+=================+=================+===================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token.                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                   |
+   |                 |                 |                 | It can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -46,7 +51,7 @@ Response Parameters
    +-----------+--------------------------------------------------------+-------------+
    | Parameter | Type                                                   | Description |
    +===========+========================================================+=============+
-   | tags      | Array of :ref:`Tags <listtags__response_tags>` objects | Tag list.   |
+   | tags      | Array of :ref:`Tags <listtags__response_tags>` objects | Tags        |
    +-----------+--------------------------------------------------------+-------------+
 
 .. _listtags__response_tags:
@@ -56,7 +61,7 @@ Response Parameters
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                                        |
    +=======================+=======================+====================================================================================================================================+
-   | key                   | String                | Key                                                                                                                                |
+   | key                   | String                | Tag key.                                                                                                                           |
    |                       |                       |                                                                                                                                    |
    |                       |                       | -  It cannot be left blank.                                                                                                        |
    |                       |                       |                                                                                                                                    |
@@ -66,15 +71,15 @@ Response Parameters
    |                       |                       |                                                                                                                                    |
    |                       |                       | Maximum: **36**                                                                                                                    |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
-   | values                | Array of strings      | List of tag values                                                                                                                 |
+   | values                | Array of strings      | Tag values.                                                                                                                        |
    |                       |                       |                                                                                                                                    |
-   |                       |                       | If **values** is an empty list, it indicates **any_value**. The values are in the OR relationship.                                 |
+   |                       |                       | If the value list is empty, this parameter indicates **any_value**. The values are in the OR relationship.                         |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 Example Requests
 ----------------
 
-Querying Tags of Specified Regions
+Querying All Tags of a Specified Region
 
 .. code-block:: text
 
@@ -85,7 +90,7 @@ Example Responses
 
 **Status code: 200**
 
-Response body of the tag set.
+Response body of the tag set
 
 .. code-block::
 
@@ -102,11 +107,11 @@ Response body of the tag set.
 Status Codes
 ------------
 
-=========== =============================
+=========== ============================
 Status Code Description
-=========== =============================
-200         Response body of the tag set.
-=========== =============================
+=========== ============================
+200         Response body of the tag set
+=========== ============================
 
 Error Codes
 -----------

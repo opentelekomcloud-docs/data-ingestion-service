@@ -2,13 +2,18 @@
 
 .. _CreateApp:
 
-Creating Consumption Apps
-=========================
+Creating a Consumption App
+==========================
 
 Function
 --------
 
-This API is used to create consumption apps.
+This API is used to create a consumption app.
+
+Calling Method
+--------------
+
+For details, see :ref:`Calling APIs <dis_02_0400>`.
 
 URI
 ---
@@ -20,7 +25,7 @@ POST /v2/{project_id}/apps
    ========== ========= ====== ===========
    Parameter  Mandatory Type   Description
    ========== ========= ====== ===========
-   project_id Yes       String Project ID.
+   project_id Yes       String Project ID
    ========== ========= ====== ===========
 
 Request Parameters
@@ -28,20 +33,20 @@ Request Parameters
 
 .. table:: **Table 2** Request header parameters
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
-   +=================+=================+=================+==========================================================================================================================================================+
-   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
-   |                 |                 |                 |                                                                                                                                                          |
-   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                       |
+   +=================+=================+=================+===================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                        |
+   |                 |                 |                 |                                                                                                                                                   |
+   |                 |                 |                 | It can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 3** Request body parameters
 
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                            |
    +=================+=================+=================+========================================================================================================================+
-   | app_name        | Yes             | String          | Name of the consumer application to be created                                                                         |
+   | app_name        | Yes             | String          | Name of the consumer application to be created.                                                                        |
    |                 |                 |                 |                                                                                                                        |
    |                 |                 |                 | The application name contains 1 to 200 characters. Only letters, digits, hyphens (-), and underscores (_) are allowed. |
    |                 |                 |                 |                                                                                                                        |
@@ -58,7 +63,7 @@ None
 Example Requests
 ----------------
 
-Creating Consumption Apps
+Creating a Consumption App
 
 .. code-block:: text
 
@@ -76,11 +81,11 @@ None
 Status Codes
 ------------
 
-=========== ================
+=========== ===============
 Status Code Description
-=========== ================
-201         Normal response.
-=========== ================
+=========== ===============
+201         Normal response
+=========== ===============
 
 Error Codes
 -----------

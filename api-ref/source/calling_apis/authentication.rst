@@ -8,7 +8,11 @@ Authentication
 Requests for calling an API can be authenticated using either of the following methods:
 
 -  Token-based authentication: Requests are authenticated using a token.
--  AK/SK-based authentication: Requests are authenticated by encrypting the request body using an AK/SK pair. AK/SK-based authentication is recommended because it is more secure than token-based authentication.
+-  AK/SK-based authentication: Requests are authenticated by encrypting the request body using an AK/SK pair.
+
+.. note::
+
+   An IAM user can pass the authentication and access DataArts Studio through an API or SDK only if **Programmatic access** is selected for **Access Type** during the creation of the IAM user.
 
 .. _dis_02_0517__en-us_topic_0183235768_en-us_topic_0181281305_dis_02_0517_en-us_topic_0121671869_section2417768214391:
 
@@ -17,7 +21,8 @@ Token-based Authentication
 
 .. note::
 
-   The validity period of a token is 24 hours. When using a token for authentication, cache it to prevent frequently calling the IAM API used to obtain a user token.
+   -  The validity period of a token is 24 hours. When using a token for authentication, cache it to prevent frequently calling the IAM API used to obtain a user token.
+   -  Ensure that the token is valid when you use it. Using a token that will soon expire may cause API calling failures.
 
 A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to a request to get permissions for calling the API.
 
@@ -62,7 +67,8 @@ AK/SK-based Authentication
 
 .. note::
 
-   AK/SK-based authentication supports API requests with a body not larger than 12 MB. For API requests with a larger body, token-based authentication is recommended.
+   -  AK/SK-based authentication supports API requests with a body not larger than 12 MB. For API requests with a larger body, use token-based authentication.
+   -  You can use the AK/SK in a permanent or temporary access key. The **X-Security-Token** field must be configured if the AK/SK in a temporary access key is used, and the field value is **security_token** of the temporary access key.
 
 In AK/SK-based authentication, AK/SK is used to sign requests and the signature is then added to the requests for authentication.
 

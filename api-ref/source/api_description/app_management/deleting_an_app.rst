@@ -1,14 +1,14 @@
-:original_name: ShowApp.html
+:original_name: DeleteApp.html
 
-.. _ShowApp:
+.. _DeleteApp:
 
-Querying App Details
-====================
+Deleting an App
+===============
 
 Function
 --------
 
-This API is used to query app details.
+This API is used to delete an app.
 
 Calling Method
 --------------
@@ -18,7 +18,7 @@ For details, see :ref:`Calling APIs <dis_02_0400>`.
 URI
 ---
 
-GET /v2/{project_id}/apps/{app_name}
+DELETE /v2/{project_id}/apps/{app_name}
 
 .. table:: **Table 1** Path Parameters
 
@@ -26,7 +26,7 @@ GET /v2/{project_id}/apps/{app_name}
    Parameter  Mandatory Type   Description
    ========== ========= ====== =============================
    project_id Yes       String Project ID
-   app_name   Yes       String Name of the app to be queried
+   app_name   Yes       String Name of the app to be deleted
    ========== ========= ====== =============================
 
 Request Parameters
@@ -45,46 +45,21 @@ Request Parameters
 Response Parameters
 -------------------
 
-**Status code: 200**
-
-.. table:: **Table 3** Response body parameters
-
-   +--------------------------------+------------------+-----------------------------------------------+
-   | Parameter                      | Type             | Description                                   |
-   +================================+==================+===============================================+
-   | app_name                       | String           | Name of the app                               |
-   +--------------------------------+------------------+-----------------------------------------------+
-   | app_id                         | String           | Unique identifier of the app                  |
-   +--------------------------------+------------------+-----------------------------------------------+
-   | create_time                    | Long             | Time when the app is created, in milliseconds |
-   +--------------------------------+------------------+-----------------------------------------------+
-   | commit_checkpoint_stream_names | Array of strings | List of associated streams                    |
-   +--------------------------------+------------------+-----------------------------------------------+
+None
 
 Example Requests
 ----------------
 
-Querying App Details
+Deleting an App
 
 .. code-block:: text
 
-   GET https://{Endpoint}/v2/{project_id}/apps/{app_name}
+   DELETE https://{Endpoint}/v2/{project_id}/apps/{app_name}
 
 Example Responses
 -----------------
 
-**Status code: 200**
-
-Normal response
-
-.. code-block::
-
-   {
-     "app_id" : "bd6IPpvgiIflQPMpi9M",
-     "app_name" : "newstream",
-     "create_time" : 1593569685875,
-     "commit_checkpoint_stream_names" : [ "newstream" ]
-   }
+None
 
 Status Codes
 ------------
@@ -92,7 +67,7 @@ Status Codes
 =========== ===============
 Status Code Description
 =========== ===============
-200         Normal response
+204         Normal response
 =========== ===============
 
 Error Codes

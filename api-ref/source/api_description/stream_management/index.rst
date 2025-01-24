@@ -5,18 +5,18 @@
 Stream Management
 =================
 
--  :ref:`Creating Streams <dis_02_0016_01>`
+-  :ref:`Creating a Stream <dis_02_0016_01>`
 -  :ref:`Querying Streams <dis_02_0024>`
--  :ref:`Deleting Specified Streams <deletestream>`
--  :ref:`Querying Stream Details <dis_02_0025>`
+-  :ref:`Deleting a Stream <deletestream>`
+-  :ref:`Querying Details of a Stream <dis_02_0025>`
 -  :ref:`Changing Partition Quantity <updatepartitioncount>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   creating_streams
+   creating_a_stream
    querying_streams
-   deleting_specified_streams
-   querying_stream_details
+   deleting_a_stream
+   querying_details_of_a_stream
    changing_partition_quantity
