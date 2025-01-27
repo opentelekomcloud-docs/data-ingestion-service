@@ -1,14 +1,14 @@
-:original_name: ShowCheckpoint.html
+:original_name: DeleteCheckpoint.html
 
-.. _ShowCheckpoint:
+.. _DeleteCheckpoint:
 
-Querying Checkpoint Details
-===========================
+Deleting a Checkpoint
+=====================
 
 Function
 --------
 
-This API is used to query checkpoint details.
+This API is used to delete a checkpoint.
 
 Calling Method
 --------------
@@ -18,7 +18,7 @@ For details, see :ref:`Calling APIs <dis_02_0400>`.
 URI
 ---
 
-GET /v2/{project_id}/checkpoints
+DELETE /v2/{project_id}/checkpoints
 
 .. table:: **Table 1** Path Parameters
 
@@ -35,9 +35,11 @@ GET /v2/{project_id}/checkpoints
    +=================+=================+=================+===============================================================================================================================================================================================================================================================================================================+
    | stream_name     | Yes             | String          | Name of the stream to which the checkpoint belongs                                                                                                                                                                                                                                                            |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | partition_id    | Yes             | String          | Identifier of the stream partition to which the checkpoint belongs.Two partition ID formats are available:- shardId-0000000000- 0For example, if a stream has three partitions, the partition IDs are **0**, **1**, and **2**, or **shardId-0000000000**, **shardId-0000000001**, and **shardId-0000000002**. |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | app_name        | Yes             | String          | Name of the app associated with the checkpoint                                                                                                                                                                                                                                                                |
+   | app_name        | Yes             | String          | Name of the application associated with the checkpoint.                                                                                                                                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                                                                                                                                                                               |
+   |                 |                 |                 | Minimum: **1**                                                                                                                                                                                                                                                                                                |
+   |                 |                 |                 |                                                                                                                                                                                                                                                                                                               |
+   |                 |                 |                 | Maximum: **50**                                                                                                                                                                                                                                                                                               |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | checkpoint_type | Yes             | String          | Type of the checkpoint.                                                                                                                                                                                                                                                                                       |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                               |
@@ -46,6 +48,8 @@ GET /v2/{project_id}/checkpoints
    |                 |                 |                 | Enumeration values:                                                                                                                                                                                                                                                                                           |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                               |
    |                 |                 |                 | -  **LAST_READ**                                                                                                                                                                                                                                                                                              |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | partition_id    | No              | String          | Identifier of the stream partition to which the checkpoint belongs.Two partition ID formats are available:- shardId-0000000000- 0For example, if a stream has three partitions, the partition IDs are **0**, **1**, and **2**, or **shardId-0000000000**, **shardId-0000000001**, and **shardId-0000000002**. |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
@@ -64,40 +68,21 @@ Request Parameters
 Response Parameters
 -------------------
 
-**Status code: 200**
-
-.. table:: **Table 4** Response body parameters
-
-   +-----------------+--------+-------------------------------------------------------------------------+
-   | Parameter       | Type   | Description                                                             |
-   +=================+========+=========================================================================+
-   | sequence_number | String | Sequence number used to record the consumption checkpoint of the stream |
-   +-----------------+--------+-------------------------------------------------------------------------+
-   | metadata        | String | Metadata information of the consumer application                        |
-   +-----------------+--------+-------------------------------------------------------------------------+
+None
 
 Example Requests
 ----------------
 
-Querying Checkpoint Details
+Deleting a Checkpoint
 
 .. code-block:: text
 
-   GET https://{Endpoint}/v2/{project_id}/checkpoints
+   DELETE https://{Endpoint}/v2/{project_id}/checkpoints
 
 Example Responses
 -----------------
 
-**Status code: 200**
-
-Normal response
-
-.. code-block::
-
-   {
-     "sequence_number" : "newstram",
-     "metadata" : ""
-   }
+None
 
 Status Codes
 ------------
@@ -105,7 +90,7 @@ Status Codes
 =========== ===============
 Status Code Description
 =========== ===============
-200         Normal response
+204         Normal response
 =========== ===============
 
 Error Codes

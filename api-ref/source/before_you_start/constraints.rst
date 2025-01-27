@@ -5,4 +5,4 @@
 Constraints
 ===========
 
--  For more constraints, see API description.
+For details, see the description of each API.

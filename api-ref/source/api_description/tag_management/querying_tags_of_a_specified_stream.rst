@@ -2,13 +2,18 @@
 
 .. _ShowStreamTags:
 
-Querying Tags of Specified Streams
-==================================
+Querying Tags of a Specified Stream
+===================================
 
 Function
 --------
 
-This API is used to query tags of specified streams.
+This API is used to query tags of a specified stream.
+
+Calling Method
+--------------
+
+For details, see :ref:`Calling APIs <dis_02_0400>`.
 
 URI
 ---
@@ -20,8 +25,8 @@ GET /v2/{project_id}/stream/{stream_id}/tags
    ========== ========= ====== ===========
    Parameter  Mandatory Type   Description
    ========== ========= ====== ===========
-   project_id Yes       String Project ID.
-   stream_id  Yes       String Stream ID.
+   project_id Yes       String Project ID
+   stream_id  Yes       String Stream ID
    ========== ========= ====== ===========
 
 Request Parameters
@@ -29,13 +34,13 @@ Request Parameters
 
 .. table:: **Table 2** Request header parameters
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
-   +=================+=================+=================+==========================================================================================================================================================+
-   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
-   |                 |                 |                 |                                                                                                                                                          |
-   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                       |
+   +=================+=================+=================+===================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token.                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                   |
+   |                 |                 |                 | It can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -47,7 +52,7 @@ Response Parameters
    +-----------+------------------------------------------------------------+-------------+
    | Parameter | Type                                                       | Description |
    +===========+============================================================+=============+
-   | tags      | Array of :ref:`Tag <showstreamtags__response_tag>` objects | Label list. |
+   | tags      | Array of :ref:`Tag <showstreamtags__response_tag>` objects | Tags        |
    +-----------+------------------------------------------------------------+-------------+
 
 .. _showstreamtags__response_tag:
@@ -57,7 +62,7 @@ Response Parameters
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                                                     |
    +=======================+=======================+=================================================================================================================================================+
-   | key                   | String                | Key                                                                                                                                             |
+   | key                   | String                | Tag key.                                                                                                                                        |
    |                       |                       |                                                                                                                                                 |
    |                       |                       | -  It cannot be left blank.                                                                                                                     |
    |                       |                       |                                                                                                                                                 |
@@ -69,7 +74,7 @@ Response Parameters
    |                       |                       |                                                                                                                                                 |
    |                       |                       | Maximum: **36**                                                                                                                                 |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-   | value                 | String                | Value                                                                                                                                           |
+   | value                 | String                | Value.                                                                                                                                          |
    |                       |                       |                                                                                                                                                 |
    |                       |                       | -  It can contain a maximum of 43 characters.                                                                                                   |
    |                       |                       |                                                                                                                                                 |
@@ -85,7 +90,7 @@ Response Parameters
 Example Requests
 ----------------
 
-This API is used to query tags of specified streams.
+Querying Tags of a Specified Stream
 
 .. code-block:: text
 

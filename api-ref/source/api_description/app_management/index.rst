@@ -5,9 +5,9 @@
 App Management
 ==============
 
--  :ref:`Creating Consumption Apps <createapp>`
+-  :ref:`Creating a Consumption App <createapp>`
 -  :ref:`Querying Apps <listapp>`
--  :ref:`Deleting Apps <deleteapp>`
+-  :ref:`Deleting an App <deleteapp>`
 -  :ref:`Querying App Details <showapp>`
 -  :ref:`Querying App Consumption Status <showconsumerstate>`
 
@@ -15,8 +15,8 @@ App Management
    :maxdepth: 1
    :hidden: 
 
-   creating_consumption_apps
+   creating_a_consumption_app
    querying_apps
-   deleting_apps
+   deleting_an_app
    querying_app_details
    querying_app_consumption_status

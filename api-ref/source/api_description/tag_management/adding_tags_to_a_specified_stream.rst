@@ -1,64 +1,66 @@
-:original_name: BatchCreateTags.html
+:original_name: CreateTag.html
 
-.. _BatchCreateTags:
+.. _CreateTag:
 
-Adding Resource Tags in Batches
-===============================
+Adding Tags to a Specified Stream
+=================================
 
 Function
 --------
 
-This API is used to add resource tags (such as stream tags) in batches. The API is idempotent. When you are creating tags, if there are duplicate keys in the request body, an error is reported. During tag creation, duplicate keys are not allowed. If a key exists in the database, its value will be overwritten.
+This API is used to add tags to a specified stream.
+
+Calling Method
+--------------
+
+For details, see :ref:`Calling APIs <dis_02_0400>`.
 
 URI
 ---
 
-POST /v2/{project_id}/stream/{stream_id}/tags/action
+POST /v2/{project_id}/stream/{stream_id}/tags
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ===========
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ===========
-   project_id Yes       String Project ID.
-   stream_id  Yes       String Stream ID.
-   ========== ========= ====== ===========
+   +-----------------+-----------------+-----------------+-----------------+
+   | Parameter       | Mandatory       | Type            | Description     |
+   +=================+=================+=================+=================+
+   | project_id      | Yes             | String          | Project ID      |
+   +-----------------+-----------------+-----------------+-----------------+
+   | stream_id       | Yes             | String          | Stream ID       |
+   |                 |                 |                 |                 |
+   |                 |                 |                 | Maximum: **60** |
+   +-----------------+-----------------+-----------------+-----------------+
 
 Request Parameters
 ------------------
 
 .. table:: **Table 2** Request header parameters
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                              |
-   +=================+=================+=================+==========================================================================================================================================================+
-   | X-Auth-Token    | Yes             | String          | User token                                                                                                                                               |
-   |                 |                 |                 |                                                                                                                                                          |
-   |                 |                 |                 | The token can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                       |
+   +=================+=================+=================+===================================================================================================================================================+
+   | X-Auth-Token    | Yes             | String          | User token.                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                   |
+   |                 |                 |                 | It can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is the user token. |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 3** Request body parameters
 
-   +-----------------+-----------------+------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type                                                       | Description                                                                                  |
-   +=================+=================+============================================================+==============================================================================================+
-   | action          | Yes             | String                                                     | Operation to be performed. The value can only be **create**, which indicates batch creation. |
-   |                 |                 |                                                            |                                                                                              |
-   |                 |                 |                                                            | Enumeration values:                                                                          |
-   |                 |                 |                                                            |                                                                                              |
-   |                 |                 |                                                            | -  **create**                                                                                |
-   +-----------------+-----------------+------------------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | tags            | Yes             | Array of :ref:`Tag <batchcreatetags__request_tag>` objects | Tag list.                                                                                    |
-   +-----------------+-----------------+------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------------------------------------------+-------------+
+   | Parameter | Mandatory | Type                                       | Description |
+   +===========+===========+============================================+=============+
+   | tag       | Yes       | :ref:`Tag <createtag__request_tag>` object | Tag object  |
+   +-----------+-----------+--------------------------------------------+-------------+
 
-.. _batchcreatetags__request_tag:
+.. _createtag__request_tag:
 
 .. table:: **Table 4** Tag
 
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                     |
    +=================+=================+=================+=================================================================================================================================================+
-   | key             | No              | String          | Key                                                                                                                                             |
+   | key             | No              | String          | Tag key.                                                                                                                                        |
    |                 |                 |                 |                                                                                                                                                 |
    |                 |                 |                 | -  It cannot be left blank.                                                                                                                     |
    |                 |                 |                 |                                                                                                                                                 |
@@ -70,7 +72,7 @@ Request Parameters
    |                 |                 |                 |                                                                                                                                                 |
    |                 |                 |                 | Maximum: **36**                                                                                                                                 |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-   | value           | No              | String          | Value                                                                                                                                           |
+   | value           | No              | String          | Value.                                                                                                                                          |
    |                 |                 |                 |                                                                                                                                                 |
    |                 |                 |                 | -  It can contain a maximum of 43 characters.                                                                                                   |
    |                 |                 |                 |                                                                                                                                                 |
@@ -91,21 +93,17 @@ None
 Example Requests
 ----------------
 
-Adding Resource Tags in Batches
+Adding Tags to a Specified Stream
 
 .. code-block:: text
 
-   POST https://{Endpoint}/v2/{project_id}/stream/{stream_id}/tags/action
+   POST https://{Endpoint}/v2/{project_id}/stream/{stream_id}/tags
 
    {
-     "action" : "create",
-     "tags" : [ {
-       "key" : "key1",
-       "value" : "value1"
-     }, {
-       "key" : "key2",
-       "value" : "value3"
-     } ]
+     "tag" : {
+       "key" : "key",
+       "value" : "value"
+     }
    }
 
 Example Responses
@@ -116,11 +114,11 @@ None
 Status Codes
 ------------
 
-=========== ================
+=========== ===============
 Status Code Description
-=========== ================
-204         Normal response.
-=========== ================
+=========== ===============
+204         Normal response
+=========== ===============
 
 Error Codes
 -----------

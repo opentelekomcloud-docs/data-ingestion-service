@@ -10,6 +10,5 @@ Data Ingestion Service - API Reference
    calling_apis/index
    application_example
    api_description/index
-   permissions_policies_and_supported_actions
    appendix/index
    change_history

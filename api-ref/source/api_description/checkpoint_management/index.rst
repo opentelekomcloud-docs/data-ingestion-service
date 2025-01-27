@@ -7,7 +7,7 @@ Checkpoint Management
 
 -  :ref:`Submitting Checkpoints <dis_02_0403>`
 -  :ref:`Querying Checkpoint Details <showcheckpoint>`
--  :ref:`Deleting Checkpoints <deletecheckpoint>`
+-  :ref:`Deleting a Checkpoint <deletecheckpoint>`
 
 .. toctree::
    :maxdepth: 1
@@ -15,4 +15,4 @@ Checkpoint Management
 
    submitting_checkpoints
    querying_checkpoint_details
-   deleting_checkpoints
+   deleting_a_checkpoint
